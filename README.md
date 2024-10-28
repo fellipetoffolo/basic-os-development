@@ -1,6 +1,17 @@
-# basic-os-development
+# Basic OS development project
 
-#### This is a basic projet for developing skills and notions about operating systems and everything related to this world.
+#### This is a basic projet for developing skills and notions about operating systems and everything related to this world. It will uses the qemu virtual machine and nasm as the assembler
+
+## Running
+
+To run the project, first ensure that you have installed all the dependencies (there is a script for doing so called install_dependencies.sh)
+
+1. Commands for generating the .bin file from the .asm file (skip this step if you already have boot.bin)
+``` nasm -f elf32 -o boot.o boot.asm  ```
+``` ld -m elf_i386 -o boot.bin boot.o ```
+2. Command for running the program on qemu:
+``` qemu-system-x86_64 -drive file=boot.bin,format=raw ```
+
 
 #### The different versions will be divided by creating branches everytime one new big feature is added.
 
