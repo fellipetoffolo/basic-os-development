@@ -6,12 +6,22 @@
 
 To run the project, first ensure that you have installed all the dependencies (there is a script for doing so called install_dependencies.sh)
 
-1. Commands for generating the .bin file from the .asm file (skip this step if you already have boot.bin)
+1.1 Comand for generating the binary file boot.bin in one step (skip if you already have it):
+
+``` nasm -f bin -o boot.bin boot.asm ```
+
+1.2. (Alternative that will only work when removing the "ORG 0x7c00" directive from boot.asm") Commands for generating the .bin file from the .asm file (skip this step if you already have boot.bin)
+
 ``` nasm -f elf32 -o boot.o boot.asm  ```
 ``` ld -m elf_i386 -o boot.bin boot.o ```
+ 
+
+
 2. Command for running the program on qemu:
+
 ``` qemu-system-x86_64 -drive file=boot.bin,format=raw ```
 
+## Versioning
 
 #### The different versions will be divided by creating branches everytime one new big feature is added.
 
