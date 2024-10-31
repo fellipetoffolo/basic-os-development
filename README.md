@@ -23,7 +23,7 @@ To run the project, first ensure that you have installed all the dependencies (t
 
 ## Versioning
 
-#### The different versions will be divided by creating branches everytime one new big feature is added.
+#### The different versions will be divided by creating branches everytime one big new feature is added.
 
 ##### Current version: 0.1
 
