@@ -1,6 +1,6 @@
 # Basic OS development project
 
-#### This is a basic projet for developing skills and notions about operating systems and everything related to this world. It will uses the qemu virtual machine and nasm as the assembler
+#### This is a basic projet for developing skills and notions about operating systems and everything related to this world. It uses the qemu virtual machine and nasm as the assembler
 
 ## Running
 
