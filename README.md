@@ -24,19 +24,24 @@ The different versions will be divided by creating branches everytime one big ne
 
 #### Version 0.2 (05/18/2025)
 
-Features:
+Changelog:
 
 - Modularization of the code;
 - Separation in Kernel and Bootloader;
 - Creation of a floopy disk img that has the boot.bin bootloader file burned to it;
 - Creationg of a minimalist file system that carries the kernel executable to run it after the initialization;
-- Disk reading operation, thata cannot be checked at all (yet), only when running Qemu with a non-MSDOS system (try boot.bin).
+- Disk reading operation that cannot be checked at all (yet), only when running Qemu with a non-MSDOS system (try boot.bin).
+
+Features:
+
+- Bootloader that writes "Hello, World!" to the std output;
+- Still, that's it...
 
 #### Version 0.1 (10/28/2024)
 
 Features:
 
-- Bootloader that writes "Hello, World!" to the stdio;
+- Bootloader that writes "Hello, World!" to the std output;
 - Sorry, that's it...
 
 ## Deprecated
